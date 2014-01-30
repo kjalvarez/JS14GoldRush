@@ -1,0 +1,9 @@
+.goldImageStyle {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+}
+
+.mapImage {
+	position: relative;
+}
