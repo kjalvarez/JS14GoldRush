@@ -1,21 +1,27 @@
 $(document).ready(function(){
-	$('.container').click(function(e) {
-		e.preventdefault;
+
+	$(document).on('click', '.container', function(e) {
+		e.preventDefault();
 		var goldSource = ($('<img src="goldImage.jpg"></img>'));
 		goldSource.css('top', e.pageY);
 		goldSource.css('left', e.pageX);
-		goldSource.addClass('goldImageStyle')
-
-
-		console.log(e.pageX);
-		console.log(e.pageY);
-		
+		goldSource.addClass('goldImageStyle');
 		$('.container').append($(goldSource));
 
 	});
 
 
+	$(document).on('click','.goldImageStyle', function(e) {
+		e.preventDefault();
+		$(this).hide();
+		e.stopPropagation();
+		
+	})
+
+
+
+	
 
 });
 
-	// <div class="goldImageStyle"><img src="goldImage.jpg"></img></div>
+	
