@@ -10,8 +10,11 @@ $(document).ready(function(){
 
 		var locationNotes = prompt("Would you like to enter notes about this location?");
 
-		$(document).on('mouseenter', Hover to show locationNotes
-		})
+		console.log(locationNotes);
+
+		goldSource.on('mouseenter', function() {
+			console.log(locationNotes);
+	});
 
 	});
 
@@ -21,11 +24,7 @@ $(document).ready(function(){
 		$(this).hide();
 		e.stopPropagation();
 		
-	})
-
-
-
-
+	});
 	
 
 });
