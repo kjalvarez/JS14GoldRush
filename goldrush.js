@@ -9,11 +9,14 @@ $(document).ready(function(){
 		$('.container').append($(goldSource));
 
 		var locationNotes = prompt("Would you like to enter notes about this location?");
+			console.log(locationNotes);
+			var locationNotesdiv = $('<div class="noteStyle">locationNotes</div>');
 
-		console.log(locationNotes);
 
 		goldSource.on('mouseenter', function() {
 			console.log(locationNotes);
+			$('.container').append(locationNotesdiv);
+
 	});
 
 	});
