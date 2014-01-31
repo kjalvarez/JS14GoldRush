@@ -8,6 +8,11 @@ $(document).ready(function(){
 		goldSource.addClass('goldImageStyle');
 		$('.container').append($(goldSource));
 
+		var locationNotes = prompt("Would you like to enter notes about this location?");
+
+		$(document).on('mouseenter', Hover to show locationNotes
+		})
+
 	});
 
 
@@ -17,6 +22,7 @@ $(document).ready(function(){
 		e.stopPropagation();
 		
 	})
+
 
 
 
